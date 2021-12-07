@@ -137,7 +137,7 @@ void func_800BC88C(GlobalContext* globalCtx) {
 
 Gfx* Gameplay_SetFog(GlobalContext* globalCtx, Gfx* gfx) {
     return Gfx_SetFog2(gfx, globalCtx->lightCtx.fogColor[0], globalCtx->lightCtx.fogColor[1],
-                       globalCtx->lightCtx.fogColor[2], 0, globalCtx->lightCtx.fogNear, 1000);
+                       globalCtx->lightCtx.fogColor[2], 0, globalCtx->lightCtx.fogNear, 1000); // Controls world fog (0, 0, 0 will disable world fog).
 }
 
 void Gameplay_Destroy(GameState* thisx) {
